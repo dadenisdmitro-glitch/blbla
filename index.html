@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="is">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nafn Eftirnafn — Ferilskrá</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="profile">
+        <div class="avatar">
+          <img src="images/avatar.jpg" alt="Dmytro" class="avatar-img" onerror="this.style.display='none'" />
+          <svg class="avatar-fallback" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="50" cy="30" r="20" fill="#6C63FF" />
+            <rect x="20" y="60" width="60" height="25" rx="6" fill="#6C63FF" />
+          </svg>
+        </div>
+        <div>
+          <h1>Dmytro</h1>
+          <p class="role">Nemandi · Tæknaskólinn</p>
+        </div>
+      </div>
+      <nav class="social">
+        <a href="#contact" class="btn">Hafa samband</a>
+        <a href="#experience">Reynsla</a>
+        <a href="#education">Menntun</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="summary" class="card">
+      <h2>Um mig</h2>
+      <p>Ég hanna nútímaleg, aðgengileg og móttækileg vefviðmót. Ég hef áhuga á hreinum kóða, þáttakerfum og sjálfvirkni. Ég elska að spila körfubolta í frítíma — það hefur kennt mér liðsvinnu, aga og þrautseigju. Ég er forvitinn nemandi sem lærir hratt og nýtir tækni til að leysa raunveruleg vandamál.</p>
+      <div class="cta-row">
+        <button id="downloadPdf" class="btn primary">Sækja PDF</button>
+        <button id="copyEmail" class="btn">Afrita netfang</button>
+      </div>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Reynsla</h2>
+      <article class="job">
+        <h3>Frontend forritari — Fyrirtæki A</h3>
+        <p class="muted">2022 — núverandi</p>
+        <ul>
+          <li>Þróun SPA með React og frammistöðubætur.</li>
+          <li>Innleiðing áhlutakerfis og hönnunarkerfis (design system).</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Vefþróunarmaður — Fyrirtæki B</h3>
+        <p class="muted">2019 — 2022</p>
+        <ul>
+          <li>Viðhald og þróun fyrirtækjavefs, CI/CD.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills" class="card two-col">
+      <div>
+        <h2>Hæfni</h2>
+        <ul class="skills-list">
+          <li>HTML / CSS / Sass</li>
+          <li>JavaScript (ES6+), TypeScript</li>
+          <li>React / Next.js</li>
+          <li>Aðgengni & frammistaða</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tól</h2>
+        <ul class="skills-list">
+          <li>Git, GitHub</li>
+          <li>CI/CD (GitHub Actions)</li>
+          <li>Figma, Storybook</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Menntun</h2>
+      <p>Ég er frá Úkraínu og hef stundað nám við tvo skóla á Íslandi:</p>
+      <ul>
+        <li>Skóli — minni en 5 mánuðir</li>
+        <li>Austyrbaer school — 2 ár</li>
+      </ul>
+      <p>Nú er ég nemandi í Tæknaskólanum.</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Hafa samband</h2>
+      <p>Netfang: <code id="email">dmytrodi25@tskoli.is</code></p>
+      <p>Sími: 785 7151</p>
+      <p><a href="mailto:dmytrodi25@tskoli.is" class="btn">Senda tölvupóst</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Dmytro — Ferilskrá</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
